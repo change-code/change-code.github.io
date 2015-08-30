@@ -1,0 +1,1077 @@
+1
+00:00:10,067 --> 00:00:12,142
+Hello, my name is Bjarne Dacker.
+
+2
+00:00:12,142 --> 00:00:15,394
+And I am responsible for the Computer Science Laboratory
+
+3
+00:00:16,700 --> 00:00:19,883
+our job, that is to put research to work
+
+4
+00:00:21,951 --> 00:00:23,631
+and our main challenge that is
+
+5
+00:00:23,645 --> 00:00:26,510
+how to program large real-time systems
+
+6
+00:00:26,510 --> 00:00:28,413
+as efficiently as possible
+
+7
+00:00:29,577 --> 00:00:31,550
+and of the many experiments
+
+8
+00:00:32,461 --> 00:00:33,998
+we decided
+
+9
+00:00:34,481 --> 00:00:37,413
+that we had to move from conventional high-level languages
+
+10
+00:00:37,413 --> 00:00:41,229
+such as C, Ada, ???, C++, etc
+
+11
+00:00:41,501 --> 00:00:43,590
+into the world of declarative
+
+12
+00:00:44,338 --> 00:00:45,080
+programming
+
+13
+00:00:46,284 --> 00:00:48,671
+we also found out that the only way
+
+14
+00:00:48,848 --> 00:00:51,977
+to do that ??? to develop our own language
+
+15
+00:00:53,147 --> 00:00:55,100
+and the language
+
+16
+00:00:55,100 --> 00:00:56,630
+which is called Erlang
+
+17
+00:00:57,188 --> 00:00:58,882
+in this video, we'd show you
+
+18
+00:00:58,882 --> 00:01:00,909
+about the properties of this language
+
+19
+00:01:00,916 --> 00:01:04,890
+and how it has been applied in large prototyping projects
+
+20
+00:01:05,072 --> 00:01:08,915
+and also about the potentials of this language in the future
+
+21
+00:01:10,310 --> 00:01:11,760
+declarative programming languages
+
+22
+00:01:11,963 --> 00:01:14,228
+have several advantages over traditional languages
+
+23
+00:01:14,391 --> 00:01:15,180
+for example
+
+24
+00:01:15,561 --> 00:01:17,038
+programs in such languages
+
+25
+00:01:17,187 --> 00:01:18,629
+are considerably shorter
+
+26
+00:01:18,847 --> 00:01:19,990
+than equivalent programs
+
+27
+00:01:19,990 --> 00:01:21,629
+in imperative languages
+
+28
+00:01:22,303 --> 00:01:23,432
+here for example
+
+29
+00:01:23,677 --> 00:01:25,255
+is a program in C
+
+30
+00:01:28,541 --> 00:01:30,120
+and here is the equivalent program
+
+31
+00:01:30,120 --> 00:01:31,085
+in erlang
+
+32
+00:01:34,023 --> 00:01:35,560
+they also encourage
+
+33
+00:01:35,560 --> 00:01:36,989
+clear programming styles
+
+34
+00:01:37,275 --> 00:01:38,248
+for example
+
+35
+00:01:38,329 --> 00:01:40,152
+the object-oriented programming style
+
+36
+00:01:40,220 --> 00:01:42,744
+or the implementation of abstract data type
+
+37
+00:01:42,744 --> 00:01:44,322
+is simple in Erlang
+
+38
+00:01:45,635 --> 00:01:46,570
+up to now
+
+39
+00:01:46,690 --> 00:01:48,241
+declarative programming languages
+
+40
+00:01:48,397 --> 00:01:49,880
+such as Prolog and ML
+
+41
+00:01:50,023 --> 00:01:51,125
+have not been used
+
+42
+00:01:51,234 --> 00:01:52,465
+in real-time applications
+
+43
+00:01:52,601 --> 00:01:53,526
+so we have to add
+
+44
+00:01:53,648 --> 00:01:55,118
+a notion of concurrency
+
+45
+00:01:55,199 --> 00:01:56,199
+in real-time
+
+46
+00:01:56,274 --> 00:01:57,159
+for our language
+
+47
+00:01:58,329 --> 00:01:59,417
+we've also added
+
+48
+00:01:59,580 --> 00:02:02,090
+a sophisticated error detection mechanism
+
+49
+00:02:02,689 --> 00:02:04,288
+this allows us to program
+
+50
+00:02:04,301 --> 00:02:06,009
+robust real-time systems
+
+51
+00:02:07,199 --> 00:02:09,974
+declarative programming languages are of course also symbolic
+
+52
+00:02:10,587 --> 00:02:11,008
+and
+
+53
+00:02:11,267 --> 00:02:13,743
+we'll stop by showing you symbolic nature of the language
+
+54
+00:02:14,035 --> 00:02:15,954
+in a typical telephony application
+
+55
+00:02:16,471 --> 00:02:19,970
+Erlang is a real-time declarative programming language
+
+56
+00:02:20,852 --> 00:02:22,661
+but in order to do experiments
+
+57
+00:02:22,661 --> 00:02:23,695
+with such languages
+
+58
+00:02:23,722 --> 00:02:24,872
+you need more than just
+
+59
+00:02:24,872 --> 00:02:25,987
+a computer
+
+60
+00:02:26,477 --> 00:02:28,498
+you need a real world application
+
+61
+00:02:28,518 --> 00:02:29,974
+and real hardware
+
+62
+00:02:30,212 --> 00:02:30,910
+to run it on
+
+63
+00:02:32,627 --> 00:02:34,890
+let's going to our lab to see how we've done this
+
+64
+00:02:35,722 --> 00:02:37,715
+this application is based on telephony
+
+65
+00:02:38,143 --> 00:02:39,701
+we have programs in
+
+66
+00:02:39,844 --> 00:02:42,910
+an Ericsson MD110 PABX
+
+67
+00:02:43,055 --> 00:02:44,606
+this PABX as you see here
+
+68
+00:02:44,926 --> 00:02:46,230
+using Erlang
+
+69
+00:02:46,898 --> 00:02:48,388
+but that's not really quite true
+
+70
+00:02:48,388 --> 00:02:49,578
+because we've changed the
+
+71
+00:02:49,578 --> 00:02:51,061
+standard MD110
+
+72
+00:02:51,082 --> 00:02:52,225
+very very slightly
+
+73
+00:02:52,422 --> 00:02:53,136
+so that
+
+74
+00:02:53,313 --> 00:02:55,639
+it communicates with the SUN workstation
+
+75
+00:02:55,844 --> 00:02:58,240
+and the Erlang program we are going to be running
+
+76
+00:02:58,240 --> 00:03:00,714
+are actually running on that SUN workstation
+
+77
+00:03:00,837 --> 00:03:02,238
+no on the
+
+78
+00:03:02,544 --> 00:03:03,836
+PABX itself
+
+79
+00:03:04,088 --> 00:03:05,231
+this has been done by
+
+80
+00:03:05,238 --> 00:03:07,190
+connecting the hardware signals
+
+81
+00:03:07,190 --> 00:03:08,370
+through from
+
+82
+00:03:08,370 --> 00:03:10,591
+the PABX to the workstation
+
+83
+00:03:10,591 --> 00:03:11,980
+ and vice versa
+
+84
+00:03:13,013 --> 00:03:15,060
+here is a standard Erlang environment
+
+85
+00:03:15,591 --> 00:03:18,115
+we running X windows on a SUN workstation
+
+86
+00:03:18,945 --> 00:03:20,989
+we have an Erlang interpreter window here
+
+87
+00:03:21,502 --> 00:03:23,849
+and an Emacs editor window here
+
+88
+00:03:25,223 --> 00:03:26,965
+ok let's just make a normal call
+
+89
+00:03:26,999 --> 00:03:29,080
+just to see the ??? system works
+
+90
+00:03:34,863 --> 00:03:36,087
+(ring)
+
+91
+00:03:36,318 --> 00:03:37,672
+hello, Mike
+
+92
+00:03:37,801 --> 00:03:39,005
+hello, Joe
+
+93
+00:03:39,271 --> 00:03:40,223
+system working?
+
+94
+00:03:40,223 --> 00:03:40,940
+seems to be
+
+95
+00:03:40,940 --> 00:03:41,699
+OK, fine
+
+96
+00:03:41,699 --> 00:03:42,440
+OK
+
+97
+00:03:44,080 --> 00:03:45,781
+right, we are going to do it again
+
+98
+00:03:46,025 --> 00:03:46,828
+and this time
+
+99
+00:03:46,828 --> 00:03:48,998
+are going to look at some of the symbolic information
+
+100
+00:03:49,039 --> 00:03:51,480
+??? available in the system while placing a call
+
+101
+00:03:51,658 --> 00:03:53,168
+I am going to dial Mike again
+
+102
+00:03:56,835 --> 00:04:00,066
+1 - 6 - 7
+
+103
+00:04:01,685 --> 00:04:02,814
+what we see here
+
+104
+00:04:03,106 --> 00:04:05,140
+is the symbolic trace of communications
+
+105
+00:04:05,140 --> 00:04:06,889
+to and from the number analyzer
+
+106
+00:04:07,970 --> 00:04:09,130
+it first received
+
+107
+00:04:09,324 --> 00:04:11,079
+message analyze 1
+
+108
+00:04:12,181 --> 00:04:14,174
+returned result get more digits
+
+109
+00:04:15,603 --> 00:04:19,049
+it then received request to analyze digits 1, 6
+
+110
+00:04:19,698 --> 00:04:22,220
+and again returned result get more digits
+
+111
+00:04:23,766 --> 00:04:27,800
+and lastly it received a request to analyze digits 1, 6, 7
+
+112
+00:04:28,636 --> 00:04:29,861
+it then returned
+
+113
+00:04:31,160 --> 00:04:32,360
+port 67
+
+114
+00:04:32,554 --> 00:04:35,051
+which ??? hardware address of telephone
+
+115
+00:04:39,228 --> 00:04:41,513
+and then I'll dial an incorrect number
+
+116
+00:04:43,676 --> 00:04:46,731
+1 - 6 - 9
+
+117
+00:04:49,676 --> 00:04:54,009
+here again we see symbolic trace of communications to and from the number analyzer
+
+118
+00:04:54,928 --> 00:04:57,630
+again it got request to analyze digit 1
+
+119
+00:04:58,465 --> 00:05:00,526
+and returned result get more digits
+
+120
+00:05:02,084 --> 00:05:05,750
+then it got request to analyze digits 1, 6
+
+121
+00:05:06,091 --> 00:05:08,274
+and again it returned result get more digits
+
+122
+00:05:09,499 --> 00:05:10,669
+finally (it returned the)
+
+123
+00:05:10,669 --> 00:05:13,743
+it got request to analyze digits 1, 6, 9
+
+124
+00:05:14,274 --> 00:05:16,621
+this time it returned result invalid
+
+125
+00:05:17,294 --> 00:05:18,879
+(as) as this number is invalid
+
+126
+00:05:20,872 --> 00:05:23,716
+okay, we've just shown you one of the properties of the language
+
+127
+00:05:23,723 --> 00:05:24,967
+that this is symbolic language
+
+128
+00:05:24,967 --> 00:05:27,669
+??? symbolic information is always available
+
+129
+00:05:28,559 --> 00:05:30,899
+and I like to show you another property of the language
+
+130
+00:05:30,899 --> 00:05:32,756
+and that is how we handle errors
+
+131
+00:05:33,525 --> 00:05:34,851
+and in order to show you this
+
+132
+00:05:34,851 --> 00:05:36,328
+??? I'm first going to make a
+
+133
+00:05:36,430 --> 00:05:38,321
+??? normal call as I did before
+
+134
+00:05:38,321 --> 00:05:39,933
+to Joe in this telephone
+
+135
+00:05:45,130 --> 00:05:46,484
+(ring)
+
+136
+00:05:47,810 --> 00:05:48,858
+hello, Joe
+
+137
+00:05:49,252 --> 00:05:50,116
+hello, Mike
+
+138
+00:05:50,511 --> 00:05:53,050
+OK, I'm now going to leave this call setup from this
+
+139
+00:05:53,388 --> 00:05:54,436
+phone here
+
+140
+00:05:55,014 --> 00:05:56,310
+and now I am going to make another
+
+141
+00:05:56,436 --> 00:05:58,619
+phone call to Joe on his other telephone
+
+142
+00:06:00,456 --> 00:06:01,878
+??? use this phone here
+
+143
+00:06:07,687 --> 00:06:09,374
+(ring)
+
+144
+00:06:09,945 --> 00:06:10,530
+hello
+
+145
+00:06:10,939 --> 00:06:11,840
+hello, Joe
+
+146
+00:06:13,700 --> 00:06:15,612
+OK, that's a ...
+
+147
+00:06:15,816 --> 00:06:18,199
+we have now made a call to Joe
+
+148
+00:06:18,353 --> 00:06:20,299
+I'm going to make a call to Robert
+
+149
+00:06:24,999 --> 00:06:26,503
+(ring)
+
+150
+00:06:29,026 --> 00:06:29,870
+hello, Robert
+
+151
+00:06:30,353 --> 00:06:30,945
+hello, Mike
+
+152
+00:06:31,013 --> 00:06:34,026
+??? now I have a ??? call setup to Joe and one to Robert
+
+153
+00:06:34,094 --> 00:06:36,597
+of course I can go back and forth between the two of them
+
+154
+00:06:37,434 --> 00:06:38,142
+hello, Joe
+
+155
+00:06:38,142 --> 00:06:38,808
+hello, Mike
+
+156
+00:06:41,053 --> 00:06:41,774
+hello, Robert
+
+157
+00:06:41,937 --> 00:06:42,631
+hello, Mike
+
+158
+00:06:43,468 --> 00:06:44,849
+well, now I'm going to do something
+
+159
+00:06:44,869 --> 00:06:46,229
+which means that the system
+
+160
+00:06:46,229 --> 00:06:46,924
+goes wrong
+
+161
+00:06:47,264 --> 00:06:48,454
+what I'm going to do
+
+162
+00:06:48,536 --> 00:06:50,556
+is that I'm going to try and puts the
+
+163
+00:06:50,556 --> 00:06:52,012
+calls into a conference
+
+164
+00:06:52,658 --> 00:06:53,964
+so I press this button here
+
+165
+00:06:53,964 --> 00:06:55,624
+which should put them into conference
+
+166
+00:06:56,189 --> 00:06:57,882
+and as we can see by the screen
+
+167
+00:06:58,087 --> 00:06:59,672
+things starting to go wrong
+
+168
+00:07:00,862 --> 00:07:01,909
+we see here
+
+169
+00:07:01,909 --> 00:07:03,365
+that something has gone wrong
+
+170
+00:07:03,773 --> 00:07:04,840
+an error has ???
+
+171
+00:07:06,059 --> 00:07:07,637
+here is the original error
+
+172
+00:07:08,283 --> 00:07:10,180
+which caused all subsequent errors
+
+173
+00:07:12,052 --> 00:07:14,860
+it also caused those parts of the system taking part
+
+174
+00:07:15,120 --> 00:07:17,773
+in that error to automatically restart themselves
+
+175
+00:07:18,474 --> 00:07:19,270
+for example
+
+176
+00:07:19,270 --> 00:07:20,712
+here's one of the telephones
+
+177
+00:07:21,167 --> 00:07:22,208
+part in the call
+
+178
+00:07:22,541 --> 00:07:23,412
+which crashed
+
+179
+00:07:23,657 --> 00:07:26,479
+and was subsequently restarted automatically by the system
+
+180
+00:07:28,174 --> 00:07:30,922
+we should now try and find out what caused the original error
+
+181
+00:07:32,194 --> 00:07:34,942
+we see that something was undefined
+
+182
+00:07:36,194 --> 00:07:38,699
+we also see that it was the function m multi
+
+183
+00:07:39,214 --> 00:07:41,459
+in the module feature which was undefined
+
+184
+00:07:42,738 --> 00:07:44,813
+we should now go into the module feature
+
+185
+00:07:44,813 --> 00:07:46,037
+and try correct the error
+
+186
+00:07:46,983 --> 00:07:48,669
+we are now in the module feature
+
+187
+00:07:48,976 --> 00:07:51,282
+we'll try find the call to m multi
+
+188
+00:07:55,506 --> 00:07:57,982
+now I know there is a function called just multi
+
+189
+00:07:58,472 --> 00:08:00,329
+this seems like it could be a spelling error
+
+190
+00:08:02,261 --> 00:08:04,030
+we'll try correct it
+
+191
+00:08:04,234 --> 00:08:05,343
+save the file
+
+192
+00:08:05,533 --> 00:08:07,830
+load it again into Erlang to see if it works
+
+193
+00:08:09,329 --> 00:08:11,172
+we are now back in the Erlang window
+
+194
+00:08:11,342 --> 00:08:14,125
+and we'll load in the corrected module feature
+
+195
+00:08:23,689 --> 00:08:25,145
+and restart the system
+
+196
+00:08:25,328 --> 00:08:27,226
+to see if we actually corrected the error
+
+197
+00:08:29,573 --> 00:08:31,910
+let's see if Robert succeeded in fixing the error
+
+198
+00:08:31,910 --> 00:08:33,185
+I'll do the same thing again
+
+199
+00:08:33,185 --> 00:08:34,682
+first I'll make a call to Joe
+
+200
+00:08:40,328 --> 00:08:41,212
+(ring)
+
+201
+00:08:43,069 --> 00:08:43,702
+hello, Mike
+
+202
+00:08:43,702 --> 00:08:44,390
+hello, Joe
+
+203
+00:08:45,021 --> 00:08:46,865
+and I make a call to Robert
+
+204
+00:08:50,355 --> 00:08:51,906
+(ring)
+
+205
+00:08:55,189 --> 00:08:55,953
+hello, Mike
+
+206
+00:08:56,069 --> 00:08:56,871
+hello, Robert
+
+207
+00:08:57,286 --> 00:08:58,728
+now, I'll press the conference button
+
+208
+00:08:58,728 --> 00:09:00,103
+??? to see if it works this time
+
+209
+00:09:03,082 --> 00:09:04,048
+hello, Joe
+
+210
+00:09:04,538 --> 00:09:05,225
+hello, Mike
+
+211
+00:09:05,368 --> 00:09:06,116
+hello, Robert
+
+212
+00:09:06,613 --> 00:09:07,483
+hello, Joe
+
+213
+00:09:07,762 --> 00:09:08,578
+hello, Mike
+
+214
+00:09:08,810 --> 00:09:10,306
+hello, well it works this time
+
+215
+00:09:10,776 --> 00:09:12,869
+??? I leave Joe and Robert talk to each other
+
+216
+00:09:12,869 --> 00:09:14,163
+and go out to the conference
+
+217
+00:09:15,469 --> 00:09:16,089
+hello, Robert
+
+218
+00:09:16,408 --> 00:09:17,272
+hello, Joe
+
+219
+00:09:17,272 --> 00:09:18,823
+I think you managed to fix about them
+
+220
+00:09:18,823 --> 00:09:19,839
+yes, finally
+
+221
+00:09:22,755 --> 00:09:24,619
+you remember before we went into conference
+
+222
+00:09:24,816 --> 00:09:25,898
+we set up a call
+
+223
+00:09:26,285 --> 00:09:28,068
+let's see if that call is still running
+
+224
+00:09:31,884 --> 00:09:32,700
+hello, Mike
+
+225
+00:09:32,809 --> 00:09:33,612
+hello, Joe
+
+226
+00:09:33,788 --> 00:09:34,972
+OK, I finish this call
+
+227
+00:09:36,339 --> 00:09:38,550
+well what you see now is that this call was
+
+228
+00:09:38,550 --> 00:09:40,026
+totally undisturbed by the fact
+
+229
+00:09:40,047 --> 00:09:42,693
+we have had errors in the system in other calls
+
+230
+00:09:42,945 --> 00:09:45,536
+and we've reloaded part of the system's software
+
+231
+00:09:45,618 --> 00:09:47,978
+this call here still worked
+
+232
+00:09:48,421 --> 00:09:51,100
+and the interesting thing is that it would have continued to work
+
+233
+00:09:51,359 --> 00:09:52,897
+whatever state the call was ???
+
+234
+00:09:52,903 --> 00:09:54,179
+it could been ringing
+
+235
+00:09:54,179 --> 00:09:55,332
+it could been dialing
+
+236
+00:09:55,332 --> 00:09:57,410
+it could been between dialing digits
+
+237
+00:09:57,410 --> 00:09:58,658
+whatever had happened
+
+238
+00:09:58,658 --> 00:10:01,991
+calls in this system are completely independent ??? each other
+
+239
+00:10:02,250 --> 00:10:04,419
+??? error in one call will never affect
+
+240
+00:10:04,576 --> 00:10:06,141
+error, error in one call
+
+241
+00:10:06,141 --> 00:10:08,910
+will never affect the the correct operation of other calls
+
+242
+00:10:11,869 --> 00:10:13,107
+you've just seen
+
+243
+00:10:13,250 --> 00:10:14,705
+our language Erlang
+
+244
+00:10:14,950 --> 00:10:17,902
+and the telephony application which we run using Erlang
+
+245
+00:10:18,712 --> 00:10:22,317
+but in fact our application contains
+many more features
+
+246
+00:10:23,304 --> 00:10:24,787
+what we've implemented is
+
+247
+00:10:24,807 --> 00:10:25,651
+hot number
+
+248
+00:10:25,651 --> 00:10:26,589
+warm number
+
+249
+00:10:26,589 --> 00:10:27,467
+short number
+
+250
+00:10:27,487 --> 00:10:28,378
+diversion
+
+251
+00:10:28,378 --> 00:10:29,630
+diversion on busy
+
+252
+00:10:29,807 --> 00:10:31,256
+911 emergency
+
+253
+00:10:31,494 --> 00:10:33,089
+black list incoming numbers
+
+254
+00:10:33,154 --> 00:10:33,902
+transfer
+
+255
+00:10:33,963 --> 00:10:34,793
+conferencing
+
+256
+00:10:34,956 --> 00:10:36,239
+directed call pick-up
+
+257
+00:10:36,439 --> 00:10:37,807
+call waiting on busy
+
+258
+00:10:37,881 --> 00:10:39,732
+call waiting on no answer
+
+259
+00:10:39,881 --> 00:10:40,895
+and intrusion
+
+260
+00:10:42,146 --> 00:10:45,029
+Erlang has been used outside of our laboratories
+
+261
+00:10:45,214 --> 00:10:48,364
+by Ericsson for a large-scale prototyping experiment
+
+262
+00:10:49,337 --> 00:10:52,051
+their findings agree completely with ours
+
+263
+00:10:53,466 --> 00:10:54,942
+programming in Erlang
+
+264
+00:10:55,309 --> 00:10:58,859
+leads to at least a factor of ten improve programmer productivity
+
+265
+00:11:00,085 --> 00:11:02,717
+Erlang programs are concise and elegant
+
+266
+00:11:03,010 --> 00:11:03,731
+in fact
+
+267
+00:11:03,921 --> 00:11:08,601
+they are about seven times short than equivalent program written in C
+
+268
+00:11:08,765 --> 00:11:12,059
+it's easy to write robust system in Erlang
+
+269
+00:11:12,764 --> 00:11:15,980
+and of course, all this leads to very short ??? times
+

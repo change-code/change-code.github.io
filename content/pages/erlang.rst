@@ -42,8 +42,11 @@ Books
 Movies
 ------
 
-* `Erlang - the movie <https://www.youtube.com/watch?v=qyVvGjNjBOA>`_
-* `Erlang the movie II - the sequel <http://www.gar1t.com/blog/2013/03/21/erlang-the-movie-ii-the-sequel/>`_
+* `Erlang The Movie <https://www.youtube.com/watch?v=xrIjfIjssLE>`_ (transcript: `srt`__ )
+* `Erlang The Movie II - The Sequel <http://www.gar1t.com/blog/2013/03/21/erlang-the-movie-ii-the-sequel/>`_ (transcript: `srt`__ )
+
+__ {filename}transcripts/ErlangTheMovie.srt
+__ {filename}transcripts/ErlangTheMovieII.srt
 
 
 Other Implementations

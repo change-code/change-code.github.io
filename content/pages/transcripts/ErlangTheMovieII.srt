@@ -1,0 +1,1444 @@
+1
+00:00:09,490 --> 00:00:11,306
+declarative programming languages
+
+2
+00:00:11,306 --> 00:00:12,580
+have several advantages
+
+3
+00:00:12,580 --> 00:00:13,873
+over traditional languages
+
+4
+00:00:13,873 --> 00:00:14,873
+for example
+
+5
+00:00:14,973 --> 00:00:16,530
+programs in such languages
+
+6
+00:00:16,581 --> 00:00:18,018
+are considerably shorter
+
+7
+00:00:18,166 --> 00:00:19,521
+than equivalent programs
+
+8
+00:00:19,577 --> 00:00:21,034
+in imperative languages
+
+9
+00:00:21,269 --> 00:00:22,373
+here for example
+
+10
+00:00:22,473 --> 00:00:23,947
+is a program in C
+
+11
+00:00:26,341 --> 00:00:28,128
+and here is the equivalent program
+
+12
+00:00:28,128 --> 00:00:29,086
+in Erlang
+
+13
+00:00:29,909 --> 00:00:31,071
+(phone rings)
+
+14
+00:00:32,899 --> 00:00:33,725
+Hello
+
+15
+00:00:33,825 --> 00:00:34,825
+Hello, Joe
+
+16
+00:00:35,023 --> 00:00:36,023
+Hello, Mike
+
+17
+00:00:36,191 --> 00:00:37,191
+Question
+
+18
+00:00:37,462 --> 00:00:38,533
+does anyone care about
+
+19
+00:00:38,564 --> 00:00:39,481
+the differences between
+
+20
+00:00:39,481 --> 00:00:41,794
+declarative and imperative languages anymore?
+
+21
+00:00:42,036 --> 00:00:43,036
+don’t be silly
+
+22
+00:00:43,395 --> 00:00:45,045
+the declarative/imperative debate
+
+23
+00:00:45,045 --> 00:00:46,346
+is always a crowd pleaser
+
+24
+00:00:46,446 --> 00:00:47,502
+from what I can tell
+
+25
+00:00:47,546 --> 00:00:49,525
+kids these days are going with what’s cool
+
+26
+00:00:49,625 --> 00:00:51,737
+like Node.js and Ruby on Rails
+
+27
+00:00:53,186 --> 00:00:54,544
+let’s ask Robert
+
+28
+00:00:55,128 --> 00:00:56,475
+(phone rings)
+
+29
+00:00:58,437 --> 00:00:59,492
+hello, Robert?
+
+30
+00:00:59,854 --> 00:01:00,567
+hello, Mike
+
+31
+00:01:00,628 --> 00:01:01,892
+Joe’s back to talking about
+
+32
+00:01:01,922 --> 00:01:03,308
+declarative languages again
+
+33
+00:01:03,380 --> 00:01:05,042
+I just think Erlang’s got a problem
+
+34
+00:01:05,142 --> 00:01:06,066
+when its spokesman
+
+35
+00:01:06,066 --> 00:01:07,208
+is an old fuddy-duddy
+
+36
+00:01:07,208 --> 00:01:08,208
+eh Joe?
+
+37
+00:01:08,308 --> 00:01:08,950
+bite me
+
+38
+00:01:09,056 --> 00:01:10,177
+Robert, what do you think?
+
+39
+00:01:10,320 --> 00:01:11,451
+Erlang’s the shizzah!
+
+40
+00:01:11,523 --> 00:01:12,735
+but I can’t blame kids
+
+41
+00:01:12,799 --> 00:01:14,451
+for picking something a little less
+
+42
+00:01:14,656 --> 00:01:15,268
+crusty
+
+43
+00:01:15,354 --> 00:01:17,458
+Erlang’s image is stuck in the 1980s
+
+44
+00:01:17,545 --> 00:01:19,453
+It’s the Bananarama of languages
+
+45
+00:01:20,439 --> 00:01:21,081
+okay
+
+46
+00:01:21,330 --> 00:01:22,079
+tell you what
+
+47
+00:01:23,002 --> 00:01:23,932
+this is bullshit
+
+48
+00:01:27,276 --> 00:01:28,333
+if kids these days
+
+49
+00:01:28,333 --> 00:01:29,658
+don’t want to use Erlang
+
+50
+00:01:29,737 --> 00:01:30,612
+which is the real
+
+51
+00:01:30,699 --> 00:01:31,748
+rock star tech
+
+52
+00:01:31,819 --> 00:01:32,591
+then fuck it
+
+53
+00:01:32,631 --> 00:01:33,929
+I’ll turn this video off
+
+54
+00:01:33,933 --> 00:01:34,652
+and go home
+
+55
+00:01:34,736 --> 00:01:35,814
+take my nine nines
+
+56
+00:01:35,905 --> 00:01:36,274
+with me
+
+57
+00:01:36,941 --> 00:01:38,342
+(video off)
+
+58
+00:01:38,463 --> 00:01:39,057
+Joe
+
+59
+00:01:39,392 --> 00:01:40,946
+I didn’t mean anything by it
+
+60
+00:01:41,106 --> 00:01:41,852
+yeah Joe
+
+61
+00:01:41,951 --> 00:01:42,663
+Mike was just
+
+62
+00:01:42,754 --> 00:01:44,185
+trying to be constructive
+
+63
+00:01:45,773 --> 00:01:46,253
+Joe
+
+64
+00:01:46,337 --> 00:01:47,757
+turn the video back on
+
+65
+00:01:47,977 --> 00:01:48,739
+I won’t
+
+66
+00:01:48,903 --> 00:01:50,745
+I won’t have Erlang disparaged!
+
+67
+00:01:50,989 --> 00:01:51,887
+yo yo yo
+
+68
+00:01:52,158 --> 00:01:53,810
+I can totally help you geezers
+
+69
+00:01:54,134 --> 00:01:54,963
+who said that?
+
+70
+00:01:55,070 --> 00:01:56,022
+all Erlang needs
+
+71
+00:01:56,106 --> 00:01:57,164
+is an image upgrade
+
+72
+00:01:57,720 --> 00:01:59,060
+that’s very interesting.
+
+73
+00:01:59,212 --> 00:01:59,928
+lots of things
+
+74
+00:01:59,932 --> 00:02:01,013
+from the 80s are cool
+
+75
+00:02:01,224 --> 00:02:01,917
+just look at
+
+76
+00:02:01,926 --> 00:02:02,508
+Fraggle Rock
+
+77
+00:02:02,610 --> 00:02:03,916
+and Super Mario Brothers
+
+78
+00:02:04,124 --> 00:02:04,952
+what the hell is that
+
+79
+00:02:05,035 --> 00:02:05,919
+it’s one of those
+
+80
+00:02:05,919 --> 00:02:06,926
+Ruby hipsters
+
+81
+00:02:07,138 --> 00:02:08,088
+watch it grandpa
+
+82
+00:02:08,418 --> 00:02:10,075
+just because I carry my Mac 
+
+83
+00:02:10,122 --> 00:02:11,151
+in a messager bag
+
+84
+00:02:11,198 --> 00:02:12,748
+and have great taste in nose rings
+
+85
+00:02:12,807 --> 00:02:14,132
+doesn’t mean I use Ruby
+
+86
+00:02:14,345 --> 00:02:15,135
+I for one
+
+87
+00:02:15,137 --> 00:02:15,871
+and interested in
+
+88
+00:02:15,871 --> 00:02:16,817
+what the little girl
+
+89
+00:02:16,817 --> 00:02:17,480
+has to say
+
+90
+00:02:17,622 --> 00:02:18,698
+yo, whatever
+
+91
+00:02:18,805 --> 00:02:20,319
+first we have to fix the name
+
+92
+00:02:20,319 --> 00:02:21,431
+a language named after
+
+93
+00:02:21,454 --> 00:02:22,424
+a nineteenth century
+
+94
+00:02:22,424 --> 00:02:23,560
+Danish mathematician
+
+95
+00:02:23,631 --> 00:02:24,494
+is about as cool
+
+96
+00:02:24,494 --> 00:02:25,973
+as having a Facebook account
+
+97
+00:02:26,091 --> 00:02:27,807
+it’s just like the olden days
+
+98
+00:02:27,913 --> 00:02:29,285
+when Erlang was banned
+
+99
+00:02:29,285 --> 00:02:30,622
+we had to change the name
+
+100
+00:02:30,799 --> 00:02:31,651
+that’s right
+
+101
+00:02:31,734 --> 00:02:32,988
+when Erlang fell out of fashion
+
+102
+00:02:32,988 --> 00:02:33,769
+at Ericsson
+
+103
+00:02:33,840 --> 00:02:35,082
+we changed the name
+
+104
+00:02:35,082 --> 00:02:36,146
+to OTP
+
+105
+00:02:36,383 --> 00:02:37,625
+three of the trendiest names
+
+106
+00:02:37,660 --> 00:02:38,642
+we could think of
+
+107
+00:02:38,974 --> 00:02:39,612
+Open
+
+108
+00:02:40,097 --> 00:02:40,606
+Telecom
+
+109
+00:02:40,689 --> 00:02:41,410
+Platform
+
+110
+00:02:41,505 --> 00:02:42,522
+gives me the chills
+
+111
+00:02:42,522 --> 00:02:43,847
+just thinking about it
+
+112
+00:02:43,883 --> 00:02:44,486
+okay
+
+113
+00:02:44,628 --> 00:02:45,468
+that’s bullcrap
+
+114
+00:02:45,574 --> 00:02:46,461
+no one care about
+
+115
+00:02:46,461 --> 00:02:47,633
+telecom platforms
+
+116
+00:02:47,633 --> 00:02:48,993
+we need something fresh
+
+117
+00:02:49,253 --> 00:02:50,058
+something edgy
+
+118
+00:02:50,176 --> 00:02:51,903
+like Erlang on Rails
+
+119
+00:02:51,998 --> 00:02:53,015
+Jesus Christ
+
+120
+00:02:53,110 --> 00:02:54,405
+The last thing you want to do
+
+121
+00:02:54,427 --> 00:02:55,156
+is imitate
+
+122
+00:02:55,426 --> 00:02:56,741
+no. something original.
+
+123
+00:02:56,894 --> 00:02:57,484
+how about
+
+124
+00:02:57,538 --> 00:02:58,863
+Erlang++?
+
+125
+00:02:59,597 --> 00:03:00,148
+I got it
+
+126
+00:03:00,443 --> 00:03:01,616
+we keep OTP
+
+127
+00:03:01,710 --> 00:03:02,354
+but with a hip
+
+128
+00:03:02,386 --> 00:03:03,366
+edgy twist
+
+129
+00:03:03,576 --> 00:03:04,037
+check it
+
+130
+00:03:04,257 --> 00:03:04,776
+your language
+
+131
+00:03:04,779 --> 00:03:05,927
+will hereby be known as
+
+132
+00:03:06,120 --> 00:03:06,732
+Outlaw
+
+133
+00:03:07,095 --> 00:03:07,787
+Techno
+
+134
+00:03:07,960 --> 00:03:08,832
+Psychobitch
+
+135
+00:03:10,519 --> 00:03:12,419
+it does spell OTP
+
+136
+00:03:12,751 --> 00:03:13,919
+don’t know what it has to do
+
+137
+00:03:13,919 --> 00:03:14,764
+with software
+
+138
+00:03:14,831 --> 00:03:15,792
+what do you think
+
+139
+00:03:15,989 --> 00:03:16,694
+Joe?
+
+140
+00:03:17,739 --> 00:03:19,083
+I absolutely love it
+
+141
+00:03:19,106 --> 00:03:21,020
+that name is fucking gangster
+
+142
+00:03:21,216 --> 00:03:21,848
+yeah, Joe
+
+143
+00:03:22,031 --> 00:03:22,653
+you rule
+
+144
+00:03:22,969 --> 00:03:23,326
+okay
+
+145
+00:03:23,425 --> 00:03:24,267
+next thing we need
+
+146
+00:03:24,267 --> 00:03:25,185
+is a video that is
+
+147
+00:03:25,185 --> 00:03:25,905
+just as cool as
+
+148
+00:03:25,914 --> 00:03:27,305
+the original Erlang The Movie
+
+149
+00:03:27,366 --> 00:03:28,417
+but speaks to today’s
+
+150
+00:03:28,417 --> 00:03:29,376
+programmer hipster
+
+151
+00:03:29,667 --> 00:03:30,664
+I’m thinking something
+
+152
+00:03:30,765 --> 00:03:31,384
+like this
+
+153
+00:03:45,905 --> 00:03:46,953
+yo, what up bitches
+
+154
+00:03:47,067 --> 00:03:47,761
+Rex here
+
+155
+00:03:47,824 --> 00:03:48,250
+this time
+
+156
+00:03:48,266 --> 00:03:49,016
+I’m talking about
+
+157
+00:03:49,016 --> 00:03:49,483
+a bad ass
+
+158
+00:03:49,538 --> 00:03:50,080
+new language
+
+159
+00:03:50,115 --> 00:03:52,095
+called Outlaw Techno Psychobitch
+
+160
+00:03:52,105 --> 00:03:53,766
+or OTP for short
+
+161
+00:03:54,174 --> 00:03:55,084
+so you all know
+
+162
+00:03:55,109 --> 00:03:56,193
+I’m a huge Ruby fan
+
+163
+00:03:56,397 --> 00:03:57,820
+Ruby gives you 15 ways
+
+164
+00:03:57,850 --> 00:03:58,745
+to do the same thing
+
+165
+00:03:58,745 --> 00:04:00,267
+and freedom of choice is good
+
+166
+00:04:00,412 --> 00:04:01,386
+then I realized
+
+167
+00:04:01,386 --> 00:04:03,063
+that’s just 15 different ways
+
+168
+00:04:03,237 --> 00:04:04,461
+to create really slow
+
+169
+00:04:04,461 --> 00:04:05,540
+crappy programs
+
+170
+00:04:05,903 --> 00:04:07,714
+then I started using Node.js
+
+171
+00:04:07,778 --> 00:04:08,733
+I like Node because
+
+172
+00:04:08,733 --> 00:04:10,141
+as my hero Ryan Dahl says
+
+173
+00:04:10,335 --> 00:04:11,792
+it’s like coloring with crayons
+
+174
+00:04:11,847 --> 00:04:13,518
+and playing with Duplo blocks
+
+175
+00:04:13,852 --> 00:04:14,807
+but as it turns out
+
+176
+00:04:14,822 --> 00:04:15,558
+it’s less like
+
+177
+00:04:15,558 --> 00:04:16,762
+playing with Duplo blocks
+
+178
+00:04:16,926 --> 00:04:17,727
+and more like
+
+179
+00:04:17,756 --> 00:04:19,328
+playing with slinkies
+
+180
+00:04:19,756 --> 00:04:21,333
+slinkies that get tangled together 
+
+181
+00:04:21,333 --> 00:04:22,731
+and impossible to separate
+
+182
+00:04:23,313 --> 00:04:24,079
+so then I checked out
+
+183
+00:04:24,079 --> 00:04:25,720
+Outlaw Techno Psychobitch
+
+184
+00:04:25,904 --> 00:04:27,212
+It’s a language out of Sweden
+
+185
+00:04:27,247 --> 00:04:28,988
+that can be used to build web scale,
+
+186
+00:04:29,132 --> 00:04:29,898
+asynchronous,
+
+187
+00:04:30,038 --> 00:04:30,704
+non-blocking,
+
+188
+00:04:30,878 --> 00:04:31,515
+sharded,
+
+189
+00:04:31,565 --> 00:04:32,331
+event-driven,
+
+190
+00:04:32,376 --> 00:04:33,216
+message passing,
+
+191
+00:04:33,311 --> 00:04:33,952
+NoSQL,
+
+192
+00:04:34,047 --> 00:04:34,659
+reliable,
+
+193
+00:04:34,828 --> 00:04:35,594
+highly available,
+
+194
+00:04:35,778 --> 00:04:36,524
+high performance,
+
+195
+00:04:36,539 --> 00:04:37,201
+real-time,
+
+196
+00:04:37,380 --> 00:04:38,006
+clusterable,
+
+197
+00:04:38,076 --> 00:04:38,499
+bad ass,
+
+198
+00:04:38,563 --> 00:04:39,265
+rock star,
+
+199
+00:04:39,474 --> 00:04:40,120
+get the girls,
+
+200
+00:04:40,389 --> 00:04:41,210
+get the boys
+
+201
+00:04:41,324 --> 00:04:42,219
+impress your mom,
+
+202
+00:04:42,234 --> 00:04:43,175
+impress your cat
+
+203
+00:04:43,175 --> 00:04:44,025
+applications
+
+204
+00:04:47,308 --> 00:04:47,910
+Ryan Dahl
+
+205
+00:04:47,955 --> 00:04:48,945
+my hero says
+
+206
+00:04:49,089 --> 00:04:50,104
+we should not be supporting
+
+207
+00:04:50,104 --> 00:04:51,601
+more programming languages
+
+208
+00:04:51,705 --> 00:04:53,118
+that we should be killing them
+
+209
+00:04:53,282 --> 00:04:54,177
+that all these bullshit
+
+210
+00:04:54,177 --> 00:04:55,685
+projects are confusing people
+
+211
+00:04:55,844 --> 00:04:57,162
+but Psychobitch is just
+
+212
+00:04:57,172 --> 00:04:58,018
+so damn cool
+
+213
+00:04:58,077 --> 00:04:58,878
+I couldn’t resist
+
+214
+00:04:58,878 --> 00:04:59,634
+giving it a try
+
+215
+00:05:03,186 --> 00:05:03,688
+the first thing
+
+216
+00:05:03,688 --> 00:05:04,956
+Psychobitch kills off
+
+217
+00:05:05,131 --> 00:05:06,235
+is curly braces
+
+218
+00:05:06,513 --> 00:05:07,175
+thank God
+
+219
+00:05:07,459 --> 00:05:08,538
+after a half century of
+
+220
+00:05:08,538 --> 00:05:09,508
+curly braces
+
+221
+00:05:09,528 --> 00:05:10,876
+we need something that’s fresh
+
+222
+00:05:11,174 --> 00:05:12,666
+Psychobitch uses single character
+
+223
+00:05:12,696 --> 00:05:13,676
+block delimiters
+
+224
+00:05:13,711 --> 00:05:14,736
+like in sentences
+
+225
+00:05:18,914 --> 00:05:20,411
+my hero Ryan Dahl says
+
+226
+00:05:20,461 --> 00:05:21,769
+math is not necessary
+
+227
+00:05:21,963 --> 00:05:22,839
+that people who think
+
+228
+00:05:22,839 --> 00:05:24,311
+it’s superior to curly braces
+
+229
+00:05:24,331 --> 00:05:24,779
+are wrong
+
+230
+00:05:25,097 --> 00:05:25,863
+but, I figure
+
+231
+00:05:25,908 --> 00:05:27,092
+if math can get a rover
+
+232
+00:05:27,107 --> 00:05:27,634
+to Mars
+
+233
+00:05:28,002 --> 00:05:28,892
+maybe it can help us
+
+234
+00:05:28,892 --> 00:05:29,952
+write better programs
+
+235
+00:05:34,031 --> 00:05:34,757
+Psychobitch gets
+
+236
+00:05:34,757 --> 00:05:36,209
+pretty uptight about logic
+
+237
+00:05:36,259 --> 00:05:36,871
+if you say
+
+238
+00:05:36,896 --> 00:05:37,652
+that X is one
+
+239
+00:05:37,736 --> 00:05:38,806
+and then turn around
+
+240
+00:05:38,910 --> 00:05:40,069
+and say X is two
+
+241
+00:05:40,089 --> 00:05:41,313
+Psychobitch goes ape shit
+
+242
+00:05:41,437 --> 00:05:42,009
+she’s like
+
+243
+00:05:42,129 --> 00:05:42,850
+what the hell
+
+244
+00:05:42,870 --> 00:05:44,471
+when did one start equalling two?
+
+245
+00:05:48,555 --> 00:05:49,888
+Psychobitch has this great feature
+
+246
+00:05:49,908 --> 00:05:51,152
+called pattern matching
+
+247
+00:05:51,309 --> 00:05:52,510
+you define the patterns
+
+248
+00:05:52,540 --> 00:05:53,515
+and if there’s a match
+
+249
+00:05:53,574 --> 00:05:54,766
+your program keeps going
+
+250
+00:05:55,189 --> 00:05:56,411
+if something doesn’t match
+
+251
+00:05:56,440 --> 00:05:57,307
+it crashes
+
+252
+00:05:58,183 --> 00:05:59,936
+like assertions but built-in
+
+253
+00:06:04,240 --> 00:06:06,148
+what happens when your program crashes?
+
+254
+00:06:06,278 --> 00:06:07,776
+Psychobitch has you covered
+
+255
+00:06:07,916 --> 00:06:09,014
+it monitors your code
+
+256
+00:06:09,405 --> 00:06:10,848
+and restart things that break
+
+257
+00:06:11,034 --> 00:06:12,225
+it’s like the Terminator
+
+258
+00:06:12,327 --> 00:06:13,593
+you can blast it in the face
+
+259
+00:06:13,593 --> 00:06:14,552
+with a shot gun
+
+260
+00:06:14,552 --> 00:06:15,729
+it stops for a second
+
+261
+00:06:16,350 --> 00:06:17,377
+then keeps on coming
+
+262
+00:06:21,297 --> 00:06:22,303
+I’ve written a chat server
+
+263
+00:06:22,303 --> 00:06:23,317
+in Psychobitch
+
+264
+00:06:23,317 --> 00:06:24,803
+it’s where all my friends and me
+
+265
+00:06:24,803 --> 00:06:26,243
+can chat about how awesome
+
+266
+00:06:26,243 --> 00:06:27,060
+Ryan Dahl is
+
+267
+00:06:27,222 --> 00:06:29,054
+because the server is written in Psychobitch
+
+268
+00:06:29,067 --> 00:06:30,283
+it can easily handle
+
+269
+00:06:30,283 --> 00:06:31,919
+thousands of concurrent users
+
+270
+00:06:32,405 --> 00:06:32,763
+shit
+
+271
+00:06:32,898 --> 00:06:34,162
+did I say thousands
+
+272
+00:06:34,283 --> 00:06:35,074
+because I meant
+
+273
+00:06:35,324 --> 00:06:36,432
+tens of thousands
+
+274
+00:06:36,851 --> 00:06:38,459
+and by tens of thousands
+
+275
+00:06:38,459 --> 00:06:39,047
+I mean
+
+276
+00:06:39,743 --> 00:06:40,763
+hundreds of thousands
+
+277
+00:06:43,831 --> 00:06:45,750
+I’m already logged in as myself
+
+278
+00:06:45,919 --> 00:06:46,500
+at the top
+
+279
+00:06:47,030 --> 00:06:48,620
+I’ll log in as another user
+
+280
+00:06:49,490 --> 00:06:51,392
+you say something using the “tell” command
+
+281
+00:06:51,710 --> 00:06:53,404
+the messages are received instantly
+
+282
+00:06:53,553 --> 00:06:54,182
+even though there are
+
+283
+00:06:54,182 --> 00:06:56,126
+hundreds of thousands of connected users
+
+284
+00:06:56,578 --> 00:06:57,782
+I’ll use the “yell” command
+
+285
+00:06:57,782 --> 00:06:59,844
+to broadcast a message to every user
+
+286
+00:07:00,897 --> 00:07:02,338
+that literally sent the message
+
+287
+00:07:02,410 --> 00:07:03,733
+to 300,000 users
+
+288
+00:07:04,080 --> 00:07:04,846
+about a second
+
+289
+00:07:08,881 --> 00:07:09,281
+okay
+
+290
+00:07:09,444 --> 00:07:11,770
+300,000 concurrent users is impressive
+
+291
+00:07:12,143 --> 00:07:13,879
+but even Node.js can do that
+
+292
+00:07:14,101 --> 00:07:15,457
+let’s try something hard
+
+293
+00:07:15,753 --> 00:07:16,882
+to make things interesting
+
+294
+00:07:17,040 --> 00:07:17,802
+we’ll trigger a bug
+
+295
+00:07:17,802 --> 00:07:18,549
+on the server
+
+296
+00:07:20,001 --> 00:07:20,526
+damn
+
+297
+00:07:20,641 --> 00:07:22,272
+I must have said something bad
+
+298
+00:07:22,445 --> 00:07:23,465
+but as you can see
+
+299
+00:07:23,552 --> 00:07:25,234
+Mary and Jack can still chat
+
+300
+00:07:25,392 --> 00:07:27,490
+of the 300,000 users on the server
+
+301
+00:07:27,569 --> 00:07:28,892
+I’m the only one affected
+
+302
+00:07:29,539 --> 00:07:30,258
+let’s see
+
+303
+00:07:30,258 --> 00:07:31,429
+if we can fix the bug
+
+304
+00:07:31,904 --> 00:07:32,687
+here’s the code
+
+305
+00:07:33,830 --> 00:07:34,700
+holy crap
+
+306
+00:07:34,886 --> 00:07:35,548
+it looks like
+
+307
+00:07:35,548 --> 00:07:36,741
+the original programmer
+
+308
+00:07:36,741 --> 00:07:37,474
+in his zeal
+
+309
+00:07:37,474 --> 00:07:39,026
+added some forbidden utterances
+
+310
+00:07:39,170 --> 00:07:40,421
+let’s clean this up
+
+311
+00:07:40,421 --> 00:07:41,873
+because we don’t want to censor
+
+312
+00:07:42,901 --> 00:07:43,476
+okay
+
+313
+00:07:43,698 --> 00:07:45,157
+I recompiled the code
+
+314
+00:07:45,359 --> 00:07:46,660
+next, I’ll reload it
+
+315
+00:07:46,839 --> 00:07:47,731
+in real time
+
+316
+00:07:47,731 --> 00:07:50,210
+with 300,000 concurrent chats going on
+
+317
+00:07:52,510 --> 00:07:53,172
+done
+
+318
+00:07:53,675 --> 00:07:54,731
+in case you missed it
+
+319
+00:07:54,731 --> 00:07:55,543
+here it is again
+
+320
+00:07:55,809 --> 00:07:56,729
+in slow motion
+
+321
+00:08:03,454 --> 00:08:04,109
+for some of you
+
+322
+00:08:04,109 --> 00:08:05,328
+what you just saw
+
+323
+00:08:05,328 --> 00:08:07,088
+is not self explanatory
+
+324
+00:08:07,189 --> 00:08:08,574
+if gracefully handling bugs
+
+325
+00:08:08,707 --> 00:08:09,965
+with hundreds of thousands of
+
+326
+00:08:09,965 --> 00:08:11,092
+concurrent sessions
+
+327
+00:08:11,267 --> 00:08:12,525
+and fixing them in real time
+
+328
+00:08:12,525 --> 00:08:13,636
+without stopping the server
+
+329
+00:08:13,636 --> 00:08:14,589
+seems passe
+
+330
+00:08:14,627 --> 00:08:15,866
+you can aways use Ruby
+
+331
+00:08:16,031 --> 00:08:17,727
+then, when your app doesn’t scale
+
+332
+00:08:17,759 --> 00:08:18,870
+move to Node.js
+
+333
+00:08:19,035 --> 00:08:20,852
+then, when you can’t maintain your code
+
+334
+00:08:20,852 --> 00:08:22,688
+because it’s a pile of tangled slinkies
+
+335
+00:08:22,745 --> 00:08:24,003
+move to Psychobitch
+
+336
+00:08:24,130 --> 00:08:25,089
+with that experience
+
+337
+00:08:25,197 --> 00:08:26,842
+you can appreciate what you just saw
+
+338
+00:08:27,045 --> 00:08:27,833
+for the rest of you
+
+339
+00:08:28,227 --> 00:08:28,639
+yes
+
+340
+00:08:28,805 --> 00:08:29,719
+that just happened
+
+341
+00:08:34,585 --> 00:08:35,061
+So
+
+342
+00:08:35,061 --> 00:08:36,922
+what do you guys think about Psychobitch?
+
+343
+00:08:37,164 --> 00:08:38,542
+she’s utterly terrifying
+
+344
+00:08:38,618 --> 00:08:40,060
+it makes me wonder if perhaps
+
+345
+00:08:40,060 --> 00:08:41,877
+Psychobitch is a real person
+
+346
+00:08:41,927 --> 00:08:42,378
+you mean
+
+347
+00:08:42,378 --> 00:08:43,992
+is the name based on my experience
+
+348
+00:08:43,992 --> 00:08:45,827
+with a girlfriend who’s bat shit crazy
+
+349
+00:08:45,827 --> 00:08:46,983
+drop dead gorgeous
+
+350
+00:08:46,983 --> 00:08:47,638
+brilliant
+
+351
+00:08:47,835 --> 00:08:48,825
+and brags to her friends
+
+352
+00:08:48,838 --> 00:08:49,632
+about costing me
+
+353
+00:08:49,632 --> 00:08:51,030
+tens of thousands of dollars
+
+354
+00:08:51,030 --> 00:08:51,741
+in therapy
+
+355
+00:08:51,741 --> 00:08:53,049
+over the last three years
+
+356
+00:08:53,735 --> 00:08:54,301
+oh shit
+
+357
+00:08:54,301 --> 00:08:55,717
+I know a girl like that
+
+358
+00:08:55,857 --> 00:08:57,438
+she scarred me for life
+
+359
+00:08:57,667 --> 00:08:58,372
+literally
+
+360
+00:08:59,992 --> 00:09:00,678
+seriously
+
+361
+00:09:00,678 --> 00:09:02,234
+I’ll show you the scars
+
